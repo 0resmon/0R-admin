@@ -2,6 +2,10 @@
 
 A simple admin menu 
 
+Open key ``` insert ``` 
+
+Noclip + Vanish ``` delete ```
+
 ## HOW TO INSTALL
 
 read sql into ur database, and start to script :)
