@@ -25,40 +25,40 @@ Example Perm assignment for auth table  ``` perm = "admin" ```
 
 ## PERMISSION LIST
 
-- ```auth```
-- ```revive```  
-- ```heal```  
-- ```goto``` 
-- ```bring```  
-- ```kill```  
-- ```kick```
-- ```ban```
-- ```givecar```
-- ```giveownedcar```
-- ```freeze```
-- ```openinv```
-- ```clearinv```
-- ```giveitem```
-- ```setjob```
-- ```takess```
-- ```wipe```
-- ```weather```
-- ```time```
-- ```playerblips```
-- ```cleararea``` 
-- ```announcement``` 
-- ```reviveall```  
-- ```bringall```  
-- ```kickall```  
-- ```deleteallcars```  
-- ```wipeoffline```  
-- ```banoffline```  
-- ```tpm```  
-- ```fixcar```  
-- ```copy```  
-- ```noclip```  
-- ```vanish```  
-- ```playerlist```  
-- ```bansshow```  
-- ```bansdelete```  
-- ```judge``` 
+- ```auth``` For acsess menu
+- ```revive``` For revive target player
+- ```heal```  For heal target player
+- ```goto``` For go to target player
+- ```bring``` For bring to target player
+- ```kill```  For kill to target player
+- ```kick``` For kick to target player
+- ```ban``` For ban to target player
+- ```givecar``` For spawn car to target player
+- ```giveownedcar``` For give owned car to target player
+- ```freeze``` For freeze to target player
+- ```openinv``` For open to target player inventory
+- ```clearinv``` For clear to target player inventory
+- ```giveitem``` For give item to target player 
+- ```setjob``` For set job to target player
+- ```takess``` For get target player screenshot
+- ```wipe``` For wipe target player
+- ```weather``` For change server weather
+- ```time``` For change server time
+- ```playerblips``` For show on active player blips
+- ```cleararea``` For clear 150 distance area (Vehicle/Props)
+- ```announcement``` For Send announcement all active players
+- ```reviveall``` For revive all active players 
+- ```bringall```  For bring all active players 
+- ```kickall```  For kick all active players 
+- ```deleteallcars``` For clear all near active players vehicles
+- ```wipeoffline```  For wipe offline player
+- ```banoffline``` For ban offline player 
+- ```tpm```  For target to target marker
+- ```fixcar```  For fix vehicle in player
+- ```copy```  For copy vector3, vector3 & heading coords
+- ```noclip``` For self noclip
+- ```vanish```   For self vanish (invisibility)
+- ```playerlist```  For show playerlist 
+- ```bansshow```  For show ban list
+- ```bansdelete```  For delete bans
+- ```judge```  For remove all community services
