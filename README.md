@@ -6,6 +6,19 @@ A simple admin menu
 
 read sql into ur database, and start to script :)
 
+## PERMISSION USAGE
+
+Auth Table ``` Config.Auth = { } ``` 
+
+Example Auth in auth table  ``` { name = "s4", identifier = "steam:hex", perm = "admin" } ``` 
+
+Perms Table  ``` Config.Perms = { } ``` 
+
+Example Perm assignment ``` ["admin"]  = { 'auth', 'revive', 'heal', 'goto', 'bring','kick', 'setjob' } ``` 
+
+Example Perm assignment for auth table  ``` perm = "admin" ``` 
+
+
 ## PERMISSION LIST
 
 - auth
