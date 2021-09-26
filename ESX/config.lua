@@ -3,8 +3,8 @@ Config = {}
 
  
 Config.Auth = {
-  { name = "s4", identifier = "steam:11000010adab671", perm = "admin" },
-  { name = "adez", identifier = "steam:11000011b7c7b7c", perm = "admin" }
+  { name = "s4", identifier = "steam:x", perm = "admin" },
+  { name = "adez", identifier = "steam:x", perm = "admin" }
 }
 
 
