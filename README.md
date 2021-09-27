@@ -1,5 +1,8 @@
 # 0R-admin
 
+[![Discord](https://img.shields.io/discord/774651073746829332?label=Discord&logo=Discord)][discord]
+
+
 A simple admin menu 
 
 Open key ``` insert ``` 
@@ -62,3 +65,6 @@ Example Perm assignment for auth table  ``` perm = "admin" ```
 - ```bansshow```  For show ban list
 - ```bansdelete```  For delete bans
 - ```judge```  For remove all community services
+
+
+[discord]: https://discord.gg/X53Wk927sG
