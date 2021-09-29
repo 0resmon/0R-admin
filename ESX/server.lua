@@ -13,7 +13,7 @@ AddEventHandler('playerConnecting', function(name, setCallback, defer)
  	      if GetPlayerIdentifier(src, 0) == v.identifier then 
 		    banned = true
 		    defer.done(L('URE_BANNED')..v.reason..' ')
-		    break;
+		    return
 		  end
 	   end
     end     
