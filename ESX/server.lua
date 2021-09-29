@@ -3,9 +3,9 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
  
 AddEventHandler('playerConnecting', function(name, setCallback, defer) 
+    defer.defer()
     local banned = false
     local src = source
-	defer.defer()
     defer.update(L("CHECKING_BANLIST"))
     local bans = exports.ghmattimysql:executeSync("SELECT identifier,reason FROM `0r-bans` ", {  })
     if bans and bans[1] then 
