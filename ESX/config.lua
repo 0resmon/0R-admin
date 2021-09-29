@@ -1,4 +1,5 @@
 Config = {
+    InventoryType = "qb-inventory" -- or m3_inventoryhud
     StatusEsx = true 
     Auth = {
         {
