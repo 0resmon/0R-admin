@@ -1,6 +1,6 @@
 Lang = {}
 
-Lang.Language = 'tr'  
+Lang.Language = 'en'  
 
 Lang.Languages = {
     ['en'] = {
