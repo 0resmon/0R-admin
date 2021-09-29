@@ -151,9 +151,14 @@ end)
 RegisterServerEvent('0R.ADMIN.OPENINV')
 AddEventHandler('0R.ADMIN.OPENINV', function(id)
     if PermCheck(source, 'openinv') then
-	    TriggerEvent("inventory:server:OpenInventory", "otherplayer", id)
+        if Config.InventoryType == "qb-inventory" then
+	        TriggerEvent("inventory:server:OpenInventory", "otherplayer", id)
+        elseif Config.InventoryType == "m3_inventoryhud" then 
+            TriggerClientEvent("m3:inventoryhud:client:openPlayerInventory", source, id, 'admin')
+        end
     end
 end)
+
 
 RegisterServerEvent('0R.ADMIN.GIVEITEM')
 AddEventHandler('0R.ADMIN.GIVEITEM', function(id, item, count)
