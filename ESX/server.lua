@@ -94,7 +94,7 @@ AddEventHandler('0R.ADMIN.HEAL', function(id)
 	    if id == "self" then 
 		   id = tonumber(source)
 		end
-		TriggerClientEvent('esx_basicneeds:healPlayer', id)
+		TriggerClientEvent('0R.ADMIN.HEAL', id)
 		TriggerClientEvent("0R.ADMIN.SENDNUI", source, { action = "notify", value = L('PROCESS') })
     end
 end)
