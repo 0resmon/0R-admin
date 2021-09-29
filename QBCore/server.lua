@@ -3,9 +3,9 @@ TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
  
 AddEventHandler('playerConnecting', function(name, setCallback, defer) 
+    defer.defer()
     local banned = false
     local src = source
-	defer.defer()
     defer.update(L("CHECKING_BANLIST"))
     local bans = exports.ghmattimysql:executeSync("SELECT identifier,reason FROM `0r-bans` ", {  })
     if bans and bans[1] then 
@@ -13,7 +13,7 @@ AddEventHandler('playerConnecting', function(name, setCallback, defer)
  	      if GetPlayerIdentifier(src, 0) == v.identifier then 
 		    banned = true
 		    defer.done(L('URE_BANNED')..v.reason..' ')
-		    break;
+		    return
 		  end
 	   end
     end     
