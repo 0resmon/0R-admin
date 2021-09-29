@@ -14,7 +14,9 @@ AddEventHandler('playerConnecting', function(name, setCallback, defer)
 		    banned = true
 		    defer.done(L('URE_BANNED')..v.reason..' ')
 		    return
-		  end
+	      else 
+		    banned = false		  
+	      end
 	   end
     end     
    
