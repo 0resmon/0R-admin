@@ -18,7 +18,7 @@ AddEventHandler('playerConnecting', function(name, setCallback, defer)
 	   end
     end     
    
-    if not banned then defer.done() end
+    if banned == false then defer.done() end
 end)
 
 QBCore.Functions.CreateCallback('0R-admin:cp', function(source, cb)
