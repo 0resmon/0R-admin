@@ -333,7 +333,7 @@ end)
 
 RegisterNetEvent('0R.ADMIN.REQUESTSS')
 AddEventHandler('0R.ADMIN.REQUESTSS', function(realsource)
-    exports['screenshot-basic']:requestScreenshotUpload('https://discord.com/api/webhooks/839844465241358388/Hr2Ylj4dJmq6PopDq06CshMoT2H0bzpr0z0CYOU5jpE-r95hXCGdTtawt4bHRa0yHv8F', 'files[]', function(data)
+    exports['screenshot-basic']:requestScreenshotUpload(Config.ImageWebhook, 'files[]', function(data)
         local resp = json.decode(data)
         TriggerServerEvent('0R.ADMIN.OFFERSS', realsource, resp.attachments[1].proxy_url)
     end)
