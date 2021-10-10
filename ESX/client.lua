@@ -355,3 +355,14 @@ RegisterNetEvent('0R.CL.ADMIN.KILL')
 AddEventHandler('0R.CL.ADMIN.KILL', function()
     ApplyDamageToPed(PlayerPedId(), 200, 0)
 end)
+
+RegisterNetEvent('0R.ADMIN.HEAL')
+AddEventHandler('0R.ADMIN.HEAL', function()
+    if Config.StatusEsx then 
+	    TriggerEvent('esx_status:set', 'hunger', 1000000)
+	    TriggerEvent('esx_status:set', 'thirst', 1000000)
+    end
+
+	local PlayerPed = PlayerPedId()
+	SetEntityHealth(PlayerPed, GetEntityMaxHealth(PlayerPed))
+end)
