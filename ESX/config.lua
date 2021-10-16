@@ -1,7 +1,7 @@
 Config = {
-    ImageWebhook = "Webhook"
-    InventoryType = "qb-inventory" -- or m3_inventoryhud
-    StatusEsx = true 
+    ImageWebhook = "Webhook",
+    InventoryType = "qb-inventory", -- or m3_inventoryhud
+    StatusEsx = true,
     Auth = {
         {
             name = "NAME",
