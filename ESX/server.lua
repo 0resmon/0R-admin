@@ -31,28 +31,35 @@ ESX.RegisterServerCallback('0R-admin:cp', function(source, cb)
 end)
 
 ESX.RegisterServerCallback('0R-admin:GET.PLAYERS', function(source, cb)
-    if PermCheck(source, 'playerlist') then
-    local Players = {}
+	if PermCheck(source, 'playerlist') then
+		local Players = {}
  
-    for k, v in pairs(ESX.GetPlayers()) do
-	   local xPlayer = ESX.GetPlayerFromId(v)
-       table.insert(Players, { id = v, name = xPlayer.getName() })
-    end
-
-    cb(Players)
+		for k, v in pairs(ESX.GetPlayers()) do
+			local xPlayer = ESX.GetPlayerFromId(v)
+			Players[#Players+1] = { 
+					id = v, 
+					name = xPlayer.getName() 
+			}
+    		end
+    	
+		cb(Players)
 	end
 end)
 
 ESX.RegisterServerCallback('0R-admin:GET.BANS', function(source, cb)
-    if PermCheck(source, 'bansshow') then
-    local Players = {}
-	local bans = exports.ghmattimysql:executeSync("SELECT id,identifier FROM `0r-bans` ", {  })
-    if bans and bans[1] then 
-       for k, v in pairs(bans) do
-	      table.insert(Players, { identifier = v.identifier, id = v.id })
-	   end
-    end
-    cb(Players)
+	if PermCheck(source, 'bansshow') then
+		local Players = {}
+		local bans = exports.ghmattimysql:executeSync("SELECT id,identifier FROM `0r-bans` ", {  })
+			
+		if bans and bans[1] then 
+			for k, v in pairs(bans) do
+				Players[#Players+1] = { 
+						identifier = v.identifier, 
+						id = v.id 
+				}
+	   		end
+    		end
+    		cb(Players)
 	end
 end)
 
