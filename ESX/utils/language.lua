@@ -3,8 +3,8 @@ Lang = {}
 Lang.Language = 'en'  
 
 Lang.Languages = {
-    ['en'] = {
-        ["CHECKING_BANLIST"] = "Checking ban list...",
+	['en'] = {
+		["CHECKING_BANLIST"] = "Checking ban list...",
 		["URE_BANNED"] = "You have been banned on this server! \nReason: ",
 		["PROCESS"] = "Process was successful!",
 		["KICKED_1"] = "You were kicked from the server by",
@@ -18,7 +18,6 @@ Lang.Languages = {
 		["DEV_TOOLS"] = "Dev Tools",
 		["BANS"] = "Bans",
 		["CLOSE"] = "Close",
-		
 		["REVIVE"] = "Revive",
 		["GOTO"] = "Bring",
 		["BRING"] = "Goto",
@@ -35,7 +34,6 @@ Lang.Languages = {
 		["SETJOB"] = "Set Job",
 		["TAKESHOT"] = "Take Screenshot",
 		["WIPEPLAYER"] = "Wipe player",
-		
 		["DEVTOOLS"] = "DEV TOOLS",
 		["TPM"] = "Teleport to mark",
 		["SUICIDE"] = "Suicide",
@@ -45,8 +43,6 @@ Lang.Languages = {
 		["HEADING"] = "Heading Copy",
 		["NOCLIP"] = "Noclip",
 		["VANISH"] = "Vanish",
-		
-		
 		["SERVERSETTINGS"] = "SERVER SETTINGS",
 		["SETTIME"] = "Set Time",
 		["SETWEATHER"] = "Set Weather",
@@ -61,15 +57,13 @@ Lang.Languages = {
 		["DELETEALL"] = "Delete all Cars",
 		["WIPEOFF"] = "Wipe offline",
 		["BANOFF"] = "Ban offline",
-		
 		["PLAYERNAME"] = "PLAYER NAME",
 		["PRESSENTER"] = "Press Enter To Accept Or Press ESC To Deny",
 		["AVAIBLETYPES"] = "Available types",
 		["CLEANJUDGE"] = "Clear All Judges",
 	},
-
 	['tr'] = {
-        ["CHECKING_BANLIST"] = "Banlist sorgulaniyor...",
+		["CHECKING_BANLIST"] = "Banlist sorgulaniyor...",
 		["URE_BANNED"] = "Banlisin giremezsin top! \nsebep: ",
 		["PROCESS"] = "İslem basarili!",
 		["KICKED_1"] = "Sunucudan kicklendin by",
@@ -83,7 +77,6 @@ Lang.Languages = {
 		["DEV_TOOLS"] = "Dev Tools",
 		["BANS"] = "Banlist",
 		["CLOSE"] = "Close",
-		
 		["REVIVE"] = "Revive",
 		["GOTO"] = "Go to",
 		["BRING"] = "Bring",
@@ -100,7 +93,6 @@ Lang.Languages = {
 		["SETJOB"] = "Meslek Ver",
 		["TAKESHOT"] = "Ekranini Kontrol Et",
 		["WIPEPLAYER"] = "Wipe oyuncu",
-		
 		["DEVTOOLS"] = "DEV TOOLS",
 		["TPM"] = "Tpm",
 		["SUICIDE"] = "Kendini Öldür",
@@ -110,8 +102,6 @@ Lang.Languages = {
 		["HEADING"] = "Heading Kopyala",
 		["NOCLIP"] = "Noclip",
 		["VANISH"] = "Görünmez",
-		
-		
 		["SERVERSETTINGS"] = "SERVER AYARLARI",
 		["SETTIME"] = "Set Time",
 		["SETWEATHER"] = "Set Weather",
@@ -126,23 +116,17 @@ Lang.Languages = {
 		["DELETEALL"] = "Delete all Cars",
 		["WIPEOFF"] = "Wipe offline",
 		["BANOFF"] = "Ban offline",
-		
 		["PLAYERNAME"] = "PLAYER NAME",
 		["PRESSENTER"] = "Press Enter To Accept Or Press ESC To Deny",
 		["AVAIBLETYPES"] = "Available types",
 		["CLEANJUDGE"] = "Tüm kamuları sil",
 	},
-	
 }
 
-
-
 L = function(item)
-    local lang = Lang.Languages[Lang.Language]
-
-    if lang and lang[item] then
-        return lang[item]
-    end
-
-    return item
+	local lang = Lang.Languages[Lang.Language]
+	if lang and lang[item] then
+		return lang[item]
+	end
+	return item
 end
